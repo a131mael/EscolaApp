@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <android.support.v4.widget.NestedScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:showIn="@layout/activity_pergunta_scrolling" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="acf.com.br.provasufsc.PerguntaScrollingActivity">
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            tools:showIn="@layout/activity_pergunta_scrolling" android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="acf.com.br.provasufsc.PerguntaScrollingActivity"
+            android:orientation="vertical">
+
+             <!--<TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                 android:layout_margin="@dimen/text_margin" android:text="@string/large_text" />-->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin"
+                android:id="@+id/txtPergunta"
+                android:focusable="false"
+                android:minEms="70"
+                android:focusableInTouchMode="true"
+                android:singleLine="false"
+                android:ems="70"
+                android:textSize="10sp"
+                android:autoText="true" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageViewUnder"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin"
+                android:id="@+id/txtPerguntaUnder"
+                android:focusable="false"
+                android:minEms="70"
+                android:focusableInTouchMode="true"
+                android:singleLine="false"
+                android:ems="70"
+                android:textSize="10sp"
+                android:autoText="true" />
+
+
+            <CheckBox
+                android:id="@+id/checkBox1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/btProximo" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBox2"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/btProximo" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBox4"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/btProximo" />
+
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBox8"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/btProximo" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBox16"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/btProximo" />
+
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBox32"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/btProximo" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Próximo"
+                android:id="@+id/btProximo"
+                android:gravity="center|center_horizontal"
+                android:background="@drawable/shape"
+                android:onClick="responder"
+                />
+
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+

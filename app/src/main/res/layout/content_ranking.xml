@@ -1,0 +1,657 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_ranking" tools:context="acf.com.br.provasufsc.RankingActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0       "
+        android:id="@+id/txtMeusPontosGeral"
+        android:gravity="center_horizontal"
+        android:layout_above="@+id/textView41"
+        android:layout_alignLeft="@+id/txtMeusPontosMes"
+        android:layout_alignStart="@+id/txtMeusPontosMes" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Ranking Geral:"
+        android:id="@+id/textView28"
+        android:gravity="center_horizontal"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/textView39"
+        android:layout_alignEnd="@+id/textView39"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Geral: "
+        android:id="@+id/textView29"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/textView28"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="31dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Geral:"
+        android:id="@+id/textView27"
+        android:layout_alignTop="@+id/textView29"
+        android:layout_toLeftOf="@+id/txtPontosMelhorColocadoGeral"
+        android:layout_alignLeft="@+id/textView39"
+        android:layout_alignStart="@+id/textView39" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Grupo1"
+        android:id="@+id/txtGrupo1"
+        android:gravity="center_horizontal"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView37" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Grupo 2"
+        android:id="@+id/txtGrupo2"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/textView45"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/txtPontosSemanaG4"
+        android:gravity="center_horizontal"
+        android:layout_alignRight="@+id/txtGrupo2"
+        android:layout_alignEnd="@+id/txtGrupo2"
+        android:layout_alignBottom="@+id/txtMeusPontosSemana"
+        android:layout_below="@+id/txtGrupo2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Mês:"
+        android:id="@+id/textView34"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/txtMeusPontosGeral"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Semana: "
+        android:id="@+id/textView37"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/txtMeusPontosMes"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Minha Pontuação."
+        android:id="@+id/textView38"
+        android:gravity="center_horizontal"
+        android:layout_above="@+id/textView27"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Maiores Pontuadores"
+        android:id="@+id/textView39"
+        android:gravity="center_horizontal"
+        android:layout_alignTop="@+id/textView38"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/txtPontosMelhorColocadoGeral"
+        android:layout_below="@+id/textView39"
+        android:layout_alignRight="@+id/txtGrupo1"
+        android:layout_alignEnd="@+id/txtGrupo1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Mês:"
+        android:id="@+id/textView41"
+        android:layout_below="@+id/textView27"
+        android:layout_alignRight="@+id/textView27"
+        android:layout_alignEnd="@+id/textView27"
+        android:layout_alignLeft="@+id/textView27"
+        android:layout_alignStart="@+id/textView27" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Semana: "
+        android:id="@+id/textView42"
+        android:layout_above="@+id/txtGrupo1"
+        android:layout_alignLeft="@+id/textView41"
+        android:layout_alignStart="@+id/textView41"
+        android:layout_alignRight="@+id/textView53"
+        android:layout_alignEnd="@+id/textView53" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/txtPontosMelhorCoolocadoMes"
+        android:layout_below="@+id/txtPontosMelhorColocadoGeral"
+        android:layout_alignRight="@+id/txtGrupo1"
+        android:layout_alignEnd="@+id/txtGrupo1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/txtPontosSemana"
+        android:layout_above="@+id/txtGrupo1"
+        android:layout_alignLeft="@+id/txtPontosMelhorCoolocadoMes"
+        android:layout_alignStart="@+id/txtPontosMelhorCoolocadoMes" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0       "
+        android:id="@+id/txtMeusPontosMes"
+        android:gravity="center_horizontal"
+        android:layout_alignTop="@+id/txtPontosMelhorCoolocadoMes"
+        android:layout_toRightOf="@+id/textView37" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/txtMeusPontosSemana"
+        android:layout_alignBottom="@+id/textView37"
+        android:layout_toRightOf="@+id/textView37"
+        android:layout_alignRight="@+id/txtMeusPontosGeral"
+        android:layout_alignEnd="@+id/txtMeusPontosGeral" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Minha Pontuação."
+        android:id="@+id/textView30"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/txtGrupo1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Maiores Pontuadores"
+        android:id="@+id/textView31"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/txtGrupo1"
+        android:layout_alignRight="@+id/txtGrupo1"
+        android:layout_alignEnd="@+id/txtGrupo1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Geral: "
+        android:id="@+id/textView32"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/textView30"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Mês:"
+        android:id="@+id/textView43"
+        android:gravity="center_horizontal"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView32"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Semana: "
+        android:id="@+id/textView45"
+        android:gravity="center_horizontal"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView43"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0       "
+        android:id="@+id/txtMeusPontosGeralG1"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/textView30"
+        android:layout_toRightOf="@+id/textView45"
+        android:layout_toEndOf="@+id/textView45" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0       "
+        android:id="@+id/txtMeusPontosMesG1"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/txtMeusPontosGeralG1"
+        android:layout_toRightOf="@+id/textView45" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/txtMeusPontosSemanaG1"
+        android:layout_below="@+id/txtMeusPontosMesG1"
+        android:layout_toRightOf="@+id/textView45" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Geral:"
+        android:id="@+id/textView51"
+        android:layout_below="@+id/textView31"
+        android:layout_toEndOf="@+id/txtGrupo2"
+        android:layout_alignLeft="@+id/textView31"
+        android:layout_alignStart="@+id/textView31" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Mês:"
+        android:id="@+id/textView52"
+        android:layout_below="@+id/textView51"
+        android:layout_alignLeft="@+id/textView51"
+        android:layout_alignStart="@+id/textView51" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Semana: "
+        android:id="@+id/textView53"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/textView52"
+        android:layout_alignLeft="@+id/textView52"
+        android:layout_alignStart="@+id/textView52" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/txtPontosMelhorColocadoGeralG1"
+        android:layout_toEndOf="@+id/textView53"
+        android:layout_alignBottom="@+id/textView51"
+        android:layout_below="@+id/textView31"
+        android:layout_alignLeft="@+id/txtPontosSemanaG1"
+        android:layout_alignStart="@+id/txtPontosSemanaG1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/txtPontosMelhorCoolocadoMesG1"
+        android:layout_alignBottom="@+id/textView52"
+        android:layout_below="@+id/txtPontosMelhorColocadoGeralG1"
+        android:layout_alignRight="@+id/textView31"
+        android:layout_alignEnd="@+id/textView31"
+        android:layout_toRightOf="@+id/textView41"
+        android:layout_toEndOf="@+id/textView41" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/txtPontosSemanaG1"
+        android:layout_alignBottom="@+id/textView53"
+        android:layout_below="@+id/txtPontosMelhorCoolocadoMesG1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/textView41"
+        android:layout_toEndOf="@+id/textView41" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Maiores Pontuadores"
+        android:id="@+id/textView25"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/txtGrupo2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/textView53"
+        android:layout_alignLeft="@+id/textView53"
+        android:layout_alignStart="@+id/textView53" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Minha Pontuação."
+        android:id="@+id/textView33"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/txtGrupo2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Geral: "
+        android:id="@+id/textView35"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/textView33"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Mês:"
+        android:id="@+id/textView47"
+        android:gravity="center_horizontal"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView35"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Semana: "
+        android:id="@+id/textView57"
+        android:gravity="center_horizontal"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView47"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/txtMeusPontosGeralG2"
+        android:layout_below="@+id/textView33"
+        android:layout_alignLeft="@+id/txtMeusPontosSemanaG1"
+        android:layout_alignStart="@+id/txtMeusPontosSemanaG1"
+        android:layout_alignRight="@+id/txtMeusPontosMesG1"
+        android:layout_alignEnd="@+id/txtMeusPontosMesG1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0       "
+        android:id="@+id/txtMeusPontosMesG2"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/txtMeusPontosGeralG2"
+        android:layout_alignRight="@+id/textView33"
+        android:layout_alignLeft="@+id/txtMeusPontosGeralG2"
+        android:layout_alignStart="@+id/txtMeusPontosGeralG2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0       "
+        android:id="@+id/txtMeusPontosSemanaG2"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/txtMeusPontosMesG2"
+        android:layout_alignRight="@+id/textView33"
+        android:layout_alignBottom="@+id/textView57"
+        android:layout_alignLeft="@+id/txtMeusPontosMesG2"
+        android:layout_alignStart="@+id/txtMeusPontosMesG2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Geral:"
+        android:id="@+id/textView61"
+        android:layout_below="@+id/textView25"
+        android:layout_alignLeft="@+id/textView25"
+        android:layout_alignStart="@+id/textView25" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Mês:"
+        android:id="@+id/textView62"
+        android:layout_below="@+id/textView61"
+        android:layout_alignLeft="@+id/textView25" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Semana: "
+        android:id="@+id/textView63"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/textView62"
+        android:layout_alignLeft="@+id/textView25" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/txtPontosMelhorColocadoGeralG2"
+        android:layout_below="@+id/textView25"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/txtPontosMelhorCoolocadoMesG2"
+        android:layout_below="@+id/txtPontosMelhorColocadoGeralG2"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/txtPontosSemanaG2"
+        android:layout_below="@+id/txtPontosMelhorCoolocadoMesG2"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Grupo 3"
+        android:id="@+id/txtGrupo3"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/textView63"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Minha Pontuação."
+        android:id="@+id/textView68"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/txtGrupo3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Maiores Pontuadores"
+        android:id="@+id/textView69"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/txtGrupo3"
+        android:layout_alignRight="@+id/txtGrupo3"
+        android:layout_alignEnd="@+id/txtGrupo3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Geral: "
+        android:id="@+id/textView70"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/textView68"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Mês:"
+        android:id="@+id/textView71"
+        android:gravity="center_horizontal"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView70"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Semana: "
+        android:id="@+id/textView72"
+        android:gravity="center_horizontal"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView71"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/txtMeusPontosGeralG3"
+        android:layout_alignTop="@+id/textView70"
+        android:layout_toRightOf="@+id/textView72"
+        android:layout_toEndOf="@+id/textView72" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0       "
+        android:id="@+id/txtMeusPontosSemanaG3"
+        android:gravity="center_horizontal"
+        android:layout_alignTop="@+id/textView72"
+        android:layout_toRightOf="@+id/textView72"
+        android:layout_toEndOf="@+id/textView72" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0       "
+        android:id="@+id/txtMeusPontosMesG3"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/txtMeusPontosGeralG3"
+        android:layout_alignBottom="@+id/textView71"
+        android:layout_alignLeft="@+id/txtMeusPontosSemanaG3"
+        android:layout_alignStart="@+id/txtMeusPontosSemanaG3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Geral:"
+        android:id="@+id/textView76"
+        android:layout_below="@+id/textView69"
+        android:layout_alignLeft="@+id/textView69"
+        android:layout_alignStart="@+id/textView69" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Mês:"
+        android:id="@+id/textView77"
+        android:layout_below="@+id/textView76"
+        android:layout_alignLeft="@+id/textView69" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Semana: "
+        android:id="@+id/textView78"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/textView77"
+        android:layout_alignLeft="@+id/textView69" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/txtPontosMelhorColocadoGeralG3"
+        android:layout_below="@+id/textView69"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/txtPontosMelhorCoolocadoMesG3"
+        android:layout_below="@+id/txtPontosMelhorColocadoGeralG3"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/txtPontosSemanaG3"
+        android:layout_below="@+id/txtPontosMelhorCoolocadoMesG3"
+        android:layout_alignParentRight="true" />
+
+</RelativeLayout>

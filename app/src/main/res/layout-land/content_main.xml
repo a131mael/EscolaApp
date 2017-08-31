@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main" tools:context=".MainActivity"
+    android:background="@android:color/background_light">
+
+    <ImageButton
+        android:background="@drawable/questao_png"
+        android:onClick="openSimulado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btSimulado"
+        android:layout_marginLeft="47dp"
+        android:layout_marginStart="47dp"
+        android:minWidth="90dp"
+        android:minHeight="90dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btResultados"
+        android:background="@drawable/resultado_png"
+        android:onClick="openMeusResultados"
+        android:minWidth="90dp"
+        android:minHeight="90dp"
+        android:layout_marginLeft="43dp"
+        android:layout_marginStart="43dp"
+        android:layout_alignTop="@+id/btSimulado"
+        android:layout_toRightOf="@+id/btSimulado"
+        android:layout_toEndOf="@+id/btSimulado" />
+
+    <ImageButton
+        android:background="@drawable/profile2"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:id="@+id/imageButton2"
+        android:minHeight="90dp"
+        android:minWidth="90dp"
+        android:maxWidth="90dp"
+        android:maxHeight="90dp"
+        android:layout_alignTop="@+id/imageButton3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="39dp"
+        android:layout_marginEnd="39dp" />
+
+    <ImageButton
+        android:background="@drawable/ajuda_png"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton3"
+        android:minHeight="90dp"
+        android:minWidth="90dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_alignTop="@+id/btResultados"
+        android:layout_toRightOf="@+id/btResultados"
+        android:layout_toEndOf="@+id/btResultados"
+        android:onClick="openRanking"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Todos os direitos reservados"
+        android:id="@+id/textView22"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

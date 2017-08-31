@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main" tools:context=".MainActivity"
+    android:background="@drawable/gradient">
+
+    <ImageButton
+        android:background="@drawable/questoes_100"
+        android:onClick="openSimulado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btSimulado"
+        android:layout_marginTop="124dp"
+        android:layout_marginLeft="46dp"
+        android:layout_marginStart="46dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:minWidth="90dp"
+        android:minHeight="90dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btResultados"
+        android:background="@drawable/meus_resultados_100"
+        android:onClick="openMeusResultados"
+        android:minWidth="90dp"
+        android:minHeight="90dp"
+        android:layout_alignTop="@+id/btSimulado"
+        android:layout_alignRight="@+id/textView21"
+        android:layout_alignEnd="@+id/textView21" />
+
+    <ImageButton
+        android:background="@drawable/perfil_100"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:id="@+id/imageButton2"
+        android:layout_marginTop="53dp"
+        android:layout_below="@+id/btSimulado"
+        android:minHeight="90dp"
+        android:minWidth="90dp"
+        android:maxWidth="90dp"
+        android:maxHeight="90dp"
+        android:layout_alignLeft="@+id/btSimulado"
+        android:layout_alignStart="@+id/btSimulado"
+        android:layout_alignRight="@+id/btSimulado"
+        android:layout_alignEnd="@+id/btSimulado"
+        android:onClick="openProfile"/>
+
+    <ImageButton
+        android:background="@drawable/ajuda_100"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton3"
+        android:minHeight="90dp"
+        android:minWidth="90dp"
+        android:onClick="openRanking"
+        android:layout_alignTop="@+id/imageButton2"
+        android:layout_alignLeft="@+id/btResultados"
+        android:layout_alignStart="@+id/btResultados" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Todos os direitos reservados"
+        android:id="@+id/textView5"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Não mofes com a pomba na balaia"
+        android:id="@+id/textView20"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/btSimulado"
+        android:layout_alignRight="@+id/textView5"
+        android:layout_alignEnd="@+id/textView5"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Escola Adonai"
+        android:id="@+id/textView21"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="center_horizontal" />
+
+
+</RelativeLayout>
